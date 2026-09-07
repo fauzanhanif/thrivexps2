@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #F5F5F0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e1f24;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F27D26;
+}
+
+/* Sophisticated Dark Typography Utilities */
+.outline-text {
+  -webkit-text-stroke: 1px rgba(245, 245, 240, 0.4);
+}
+
+.outline-text-bright {
+  -webkit-text-stroke: 1px #F5F5F0;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.clip-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
